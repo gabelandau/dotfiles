@@ -7,3 +7,5 @@ Currently it only contains my zsh configuration but will be updated to include m
 My zsh config is a modular set of configuration files that are loaded in alphabetical order from the `.zshrc.d` folder. The main `.zshrc` file is just responsible for loading all the files in the folder.
 
 `100.base.zshrc` loads `oh-my-zsh`, my prompt and plugins. Each other file is pretty self-explanatory by the name of the file.
+
+In order for all the configuration here to load properly, you need to install `oh-my-zsh`, `scm-breeze`, `nvm` (for Node development), `composer` (for PHP development) and `powerline10k`.
