@@ -1,5 +1,5 @@
 # i3 config file (v4)
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# https://i3wm.org/docs/userguide.html
 
 set $mod Mod4
 set $mod_alt Mod1
@@ -117,8 +117,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # Keyboard shortcuts
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Confirm exiting i3 session.' -B 'Yes' 'i3-msg exit'"
 bindsym $mod+g exec globalprotect launch-ui
+bindsym Print exec "flameshot gui"
 
 # Resizing
 bindsym $mod+r mode "resize"
@@ -133,6 +134,11 @@ mode "resize" {
   bindsym Down resize grow height 10 px or 10 ppt
   bindsym Up resize shrink height 10 px or 10 ppt
   bindsym Right resize grow width 10 px or 10 ppt
+
+  bindsym Shift+Left resize shrink width 5 px or 5 ppt
+  bindsym Shift+Down resize grow height 5 px or 5 ppt
+  bindsym Shift+Up resize shrink height 5 px or 5 ppt
+  bindsym Shift+Right resize grow width 5 px or 5 ppt
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
