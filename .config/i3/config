@@ -120,7 +120,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Confirm exiting i3 session.' -B 'Yes' 'i3-msg exit'"
 bindsym $mod+g exec globalprotect launch-ui
-bindsym Print exec "flameshot gui"
+bindsym Print exec "flameshot gui --clipboard --path ~/Pictures/Screenshots"
+bindsym $mod+Print exec "flameshot full --clipboard --path ~/Pictures/Screenshots"
 
 # Resizing
 bindsym $mod+r mode "resize"
