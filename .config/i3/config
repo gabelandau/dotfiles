@@ -189,4 +189,5 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
 
+for_window [title=".*Google Chrome*."] border pixel 1
 for_window [class="zoom" title="^zoom$"] floating enable
